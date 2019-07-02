@@ -8,24 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		85705FAD22CA974E0038243F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85705FAC22CA974E0038243F /* AppDelegate.m */; };
-		85705FB022CA974E0038243F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85705FAF22CA974E0038243F /* ViewController.m */; };
 		85705FB322CA974E0038243F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85705FB122CA974E0038243F /* Main.storyboard */; };
 		85705FB522CA97500038243F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85705FB422CA97500038243F /* Assets.xcassets */; };
 		85705FB822CA97500038243F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85705FB622CA97500038243F /* LaunchScreen.storyboard */; };
 		85705FBB22CA97500038243F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85705FBA22CA97500038243F /* main.m */; };
+		85705FC922CA98A40038243F /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85705FC822CA98A40038243F /* Entry.m */; };
+		85705FCC22CA9D490038243F /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85705FCB22CA9D490038243F /* EntryController.m */; };
+		85705FCF22CAAED00038243F /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85705FCE22CAAED00038243F /* EntryListTableViewController.m */; };
+		85705FD222CAB2FA0038243F /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85705FD122CAB2FA0038243F /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85705FA822CA974E0038243F /* JournalC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85705FAB22CA974E0038243F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85705FAC22CA974E0038243F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		85705FAE22CA974E0038243F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		85705FAF22CA974E0038243F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		85705FB222CA974E0038243F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85705FB422CA97500038243F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85705FB722CA97500038243F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85705FB922CA97500038243F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85705FBA22CA97500038243F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85705FC722CA98A40038243F /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		85705FC822CA98A40038243F /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		85705FCA22CA9D490038243F /* EntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		85705FCB22CA9D490038243F /* EntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		85705FCD22CAAED00038243F /* EntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		85705FCE22CAAED00038243F /* EntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		85705FD022CAB2FA0038243F /* EntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		85705FD122CAB2FA0038243F /* EntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +67,71 @@
 		85705FAA22CA974E0038243F /* JournalC */ = {
 			isa = PBXGroup;
 			children = (
+				85705FC622CA98730038243F /* Models */,
+				85705FC222CA984B0038243F /* Views */,
+				85705FC422CA98660038243F /* Controllers */,
+				85705FC322CA985D0038243F /* Resources */,
+			);
+			path = JournalC;
+			sourceTree = "<group>";
+		};
+		85705FC122CA98420038243F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85705FCD22CAAED00038243F /* EntryListTableViewController.h */,
+				85705FCE22CAAED00038243F /* EntryListTableViewController.m */,
+				85705FD022CAB2FA0038243F /* EntryDetailViewController.h */,
+				85705FD122CAB2FA0038243F /* EntryDetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		85705FC222CA984B0038243F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85705FB122CA974E0038243F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85705FC322CA985D0038243F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				85705FAB22CA974E0038243F /* AppDelegate.h */,
 				85705FAC22CA974E0038243F /* AppDelegate.m */,
-				85705FAE22CA974E0038243F /* ViewController.h */,
-				85705FAF22CA974E0038243F /* ViewController.m */,
-				85705FB122CA974E0038243F /* Main.storyboard */,
 				85705FB422CA97500038243F /* Assets.xcassets */,
 				85705FB622CA97500038243F /* LaunchScreen.storyboard */,
 				85705FB922CA97500038243F /* Info.plist */,
 				85705FBA22CA97500038243F /* main.m */,
 			);
-			path = JournalC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		85705FC422CA98660038243F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85705FC522CA986C0038243F /* Model Controllers */,
+				85705FC122CA98420038243F /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		85705FC522CA986C0038243F /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85705FCA22CA9D490038243F /* EntryController.h */,
+				85705FCB22CA9D490038243F /* EntryController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		85705FC622CA98730038243F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85705FC722CA98A40038243F /* Entry.h */,
+				85705FC822CA98A40038243F /* Entry.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85705FB022CA974E0038243F /* ViewController.m in Sources */,
+				85705FD222CAB2FA0038243F /* EntryDetailViewController.m in Sources */,
+				85705FCC22CA9D490038243F /* EntryController.m in Sources */,
+				85705FC922CA98A40038243F /* Entry.m in Sources */,
 				85705FBB22CA97500038243F /* main.m in Sources */,
 				85705FAD22CA974E0038243F /* AppDelegate.m in Sources */,
+				85705FCF22CAAED00038243F /* EntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YY8J3FPYX8;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YY8J3FPYX8;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
